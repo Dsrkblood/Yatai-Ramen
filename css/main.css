@@ -1,59 +1,120 @@
 * {
   box-sizing: border-box;
-  margin: 0% 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f9e9d3;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   font-family: sans-serif;
 }
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
-}
-
-.mobile {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
   background-color: #fef6eb;
-  border-bottom: 1px solid black;
 }
-.mobile .logo {
-  background-image: url(../img/Zrzut\ ekranu\ 2023-10-06\ 160051.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 95%;
-  margin-top: 0.8rem;
+.container .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
   height: 100px;
+  padding: 5px 10px;
 }
-.mobile .nav-links {
+.container nav {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+.container nav .nav-section {
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
+  background-color: #fef6eb;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
-.mobile .nav-links .nav-left,
-.mobile .nav-links .nav-right {
-  width: 50%;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
-}
-.mobile .nav-links .nav-left a,
-.mobile .nav-links .nav-right a {
+.container nav .nav-section a {
+  padding: 0.5rem;
   font-family: "Paytone One", sans-serif;
-  color: black;
   text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.container nav .nav-section a:hover {
+  color: #fef6eb;
+  text-shadow: 0 0 5px black;
+}
+.container .menu {
+  margin-top: 1rem;
+}
+.container .menu h1 {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+.container .menu .ramen-menu {
+  display: flex;
+  flex-direction: column;
+}
+.container .menu .ramen-menu .menu-container {
+  z-index: 0;
+  position: relative;
+  margin-bottom: 1.6rem;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  background-image: url(../img/Food/ramen_yakitori.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: scale 0.3s;
+}
+.container .menu .ramen-menu .menu-container .title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.2rem;
+}
+.container .menu .ramen-menu .menu-container .title .dish,
+.container .menu .ramen-menu .menu-container .title .proce {
+  font-size: 2rem;
+}
+.container .menu .ramen-menu .menu-container .containes {
+  padding-bottom: 0.2rem;
+}
+.container .menu .ramen-menu .menu-container .title,
+.container .menu .ramen-menu .menu-container .containes {
+  background-color: rgba(255, 255, 255, 0.681);
+  padding: 0.4rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container .menu .ramen-menu .menu-container .title p,
+.container .menu .ramen-menu .menu-container .containes p {
+  font-size: 1.2rem;
+}
+.container .menu .ramen-menu .menu-container:hover {
+  scale: 1.1;
+}
+.container .menu .ramen-menu .menu-container:hover .title,
+.container .menu .ramen-menu .menu-container:hover .containes {
+  color: #fef6eb;
+}
+.container .menu .ramen-menu .menu-container:hover .title,
+.container .menu .ramen-menu .menu-container:hover .containes {
+  background-color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=main.css.map */
