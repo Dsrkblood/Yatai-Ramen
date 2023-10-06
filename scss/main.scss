@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	margin: 0% 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #fcf1e2;
+	height: 100vh;
+	width: 100vw;
+	font-family: sans-serif;
+}
+
+.container {
+	height: 100vh;
+	width: 800px;
+	background-color: #fef6eb;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 5px;
+	font-size: 28px;
+	border-bottom: 2px solid black;
+	.logo {
+		background-image: url(../img/Zrzut\ ekranu\ 2023-10-06\ 160051.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 120px;
+		min-width: 50%;
+	}
+	.nav-left,
+	.nav-right {
+		min-width: 25%;
+		text-align: center;
+		a {
+			font-size: 36px;
+			text-decoration: none;
+		}
+	}
+}
