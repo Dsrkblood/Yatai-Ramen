@@ -16,7 +16,7 @@ html {
 body {
 	display: flex;
 	justify-content: center;
-	font-family: sans-serif;
+	font-family: "Paytone One", sans-serif;
 }
 .container {
 	display: flex;
@@ -48,7 +48,6 @@ body {
 			border-bottom: 1px solid black;
 			a {
 				padding: 0.5rem;
-				font-family: "Paytone One", sans-serif;
 				text-decoration: none;
 				color: black;
 				font-size: 1.6rem;
@@ -65,30 +64,39 @@ body {
 			text-align: center;
 			font-size: 3.6rem;
 			margin-bottom: 1rem;
+			border-bottom: 1px solid black;
 		}
-		.ramen-menu {
+		.menu-box {
 			display: flex;
 			flex-direction: column;
+			h2 {
+				text-align: center;
+				font-size: 2.4rem;
+				margin-bottom: 1.4rem;
+				text-transform: uppercase;
+			}
 			.menu-container {
 				z-index: 0;
-				position: relative;
 				margin-bottom: 1.6rem;
 				width: 250px;
 				height: 250px;
 				overflow: hidden;
 				border: 1px solid black;
-				box-shadow: 0 0 10px black;
-				background-image: url(../img/Food/ramen_yakitori.jpg);
+				box-shadow: 0 0 5px black;
+				// background-image: url(../img/Food/ramen_yakitori.jpg);
 				background-position: center;
 				background-size: cover;
+				transition: scale 0.3s, box-shadow 0.3s;
 				.title {
 					display: flex;
 					justify-content: space-between;
-					padding-bottom: 0.2rem;
-					// transition: color .3s;
-					.dish,
-					.proce {
-						font-size: 2rem;
+					border-bottom: 2px solid black;
+					transition: border-bottom 0.3s, color 0.3s, background-color 0.3s;
+					.dish {
+						font-size: 1.8rem;
+					}
+					.price {
+						font-size: 1.4rem;
 					}
 				}
 				.containes {
@@ -97,23 +105,35 @@ body {
 				.title,
 				.containes {
 					background-color: rgba(255, 255, 255, 0.681);
-					padding: 0.4rem;
-					transition: background-color 0.3s, color 0.3s;
+					padding: 0.2rem 0.4rem;
 					p {
 						font-size: 1.2rem;
 					}
 				}
-				transition: scale 0.3s;
 			}
 			.menu-container:hover {
+				box-shadow: 0 0 15px black;
 				scale: 1.1;
-				.title,
 				.containes {
-					color: $main-color;
+					display: none;
 				}
-				.title,
-				.containes {
+				.title {
+					color: $main-color;
+					border-bottom: 2px solid $main-color;
 					background-color: rgba(0, 0, 0, 0.6);
+					text-shadow: 0 0 5px black;
+					.price {
+						display: none;
+					}
+				}
+			}
+		}
+		.dessert-menu{
+			.menu-containe{
+				.title{
+					.dish{
+						font-size: 1px;
+					}
 				}
 			}
 		}

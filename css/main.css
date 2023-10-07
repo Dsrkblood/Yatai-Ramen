@@ -15,7 +15,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
 .container {
@@ -50,7 +50,6 @@ body {
 }
 .container nav .nav-section a {
   padding: 0.5rem;
-  font-family: "Paytone One", sans-serif;
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -66,55 +65,70 @@ body {
   text-align: center;
   font-size: 3.6rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid black;
 }
-.container .menu .ramen-menu {
+.container .menu .menu-box {
   display: flex;
   flex-direction: column;
 }
-.container .menu .ramen-menu .menu-container {
+.container .menu .menu-box h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+.container .menu .menu-box .menu-container {
   z-index: 0;
-  position: relative;
   margin-bottom: 1.6rem;
   width: 250px;
   height: 250px;
   overflow: hidden;
   border: 1px solid black;
-  box-shadow: 0 0 10px black;
-  background-image: url(../img/Food/ramen_yakitori.jpg);
+  box-shadow: 0 0 5px black;
   background-position: center;
   background-size: cover;
-  transition: scale 0.3s;
+  transition: scale 0.3s, box-shadow 0.3s;
 }
-.container .menu .ramen-menu .menu-container .title {
+.container .menu .menu-box .menu-container .title {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.3s, color 0.3s, background-color 0.3s;
+}
+.container .menu .menu-box .menu-container .title .dish {
+  font-size: 1.8rem;
+}
+.container .menu .menu-box .menu-container .title .price {
+  font-size: 1.4rem;
+}
+.container .menu .menu-box .menu-container .containes {
   padding-bottom: 0.2rem;
 }
-.container .menu .ramen-menu .menu-container .title .dish,
-.container .menu .ramen-menu .menu-container .title .proce {
-  font-size: 2rem;
-}
-.container .menu .ramen-menu .menu-container .containes {
-  padding-bottom: 0.2rem;
-}
-.container .menu .ramen-menu .menu-container .title,
-.container .menu .ramen-menu .menu-container .containes {
+.container .menu .menu-box .menu-container .title,
+.container .menu .menu-box .menu-container .containes {
   background-color: rgba(255, 255, 255, 0.681);
-  padding: 0.4rem;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0.2rem 0.4rem;
 }
-.container .menu .ramen-menu .menu-container .title p,
-.container .menu .ramen-menu .menu-container .containes p {
+.container .menu .menu-box .menu-container .title p,
+.container .menu .menu-box .menu-container .containes p {
   font-size: 1.2rem;
 }
-.container .menu .ramen-menu .menu-container:hover {
+.container .menu .menu-box .menu-container:hover {
+  box-shadow: 0 0 15px black;
   scale: 1.1;
 }
-.container .menu .ramen-menu .menu-container:hover .title,
-.container .menu .ramen-menu .menu-container:hover .containes {
-  color: #fef6eb;
+.container .menu .menu-box .menu-container:hover .containes {
+  display: none;
 }
-.container .menu .ramen-menu .menu-container:hover .title,
-.container .menu .ramen-menu .menu-container:hover .containes {
+.container .menu .menu-box .menu-container:hover .title {
+  color: #fef6eb;
+  border-bottom: 2px solid #fef6eb;
   background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 5px black;
+}
+.container .menu .menu-box .menu-container:hover .title .price {
+  display: none;
+}
+.container .menu .dessert-menu .menu-containe .title .dish {
+  font-size: 1px;
 }/*# sourceMappingURL=main.css.map */
