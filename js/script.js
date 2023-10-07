@@ -1,4 +1,5 @@
 const menuContainer = document.querySelectorAll(".menu-container");
+const yearFooter = document.querySelector(".year");
 
 const imgFood = [
 	"ramen_yakitori",
@@ -24,4 +25,10 @@ const bgcImgAdd = () => {
 	});
 };
 
+const data = params => {
+	let addData = new Date();
+	yearFooter.textContent = addData.getFullYear();
+};
+
+data();
 bgcImgAdd();
