@@ -9,6 +9,7 @@
 }
 
 html {
+  scroll-padding-top: 30px;
   scroll-behavior: smooth;
 }
 
