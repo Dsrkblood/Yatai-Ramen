@@ -18,6 +18,14 @@ body {
   font-family: "Paytone One", sans-serif;
 }
 
+h1 {
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #fef6eb;
+  background-color: black;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -53,19 +61,21 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 .container nav .nav-section a:hover {
   color: #fef6eb;
   text-shadow: 0 0 5px black;
 }
 .container .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem;
+  width: 100%;
 }
 .container .menu h1 {
-  text-align: center;
-  font-size: 3.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid black;
+  width: 100%;
 }
 .container .menu .menu-box {
   display: flex;
@@ -96,10 +106,14 @@ body {
   transition: border-bottom 0.3s, color 0.3s, background-color 0.3s;
 }
 .container .menu .menu-box .menu-container .title .dish {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+}
+.container .menu .menu-box .menu-container .title .dish i {
+  color: green;
 }
 .container .menu .menu-box .menu-container .title .price {
   font-size: 1.4rem;
+  padding-right: 0.5rem;
 }
 .container .menu .menu-box .menu-container .containes {
   padding-bottom: 0.2rem;
@@ -129,6 +143,91 @@ body {
 .container .menu .menu-box .menu-container:hover .title .price {
   display: none;
 }
-.container .menu .dessert-menu .menu-containe .title .dish {
-  font-size: 1px;
+.container .contact {
+  margin-top: 2rem;
+  width: 100%;
+}
+.container .contact .contact-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 1.4rem;
+  padding-top: 0.2rem;
+  align-items: center;
+  background-color: #fef6eb;
+}
+.container .contact .contact-box a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.container .contact .contact-box a:hover {
+  color: #fef6eb;
+  text-shadow: 0 0 10px black;
+}
+.container .contact .contact-box .media-box a {
+  margin: 0.2rem 1rem;
+  padding: 0.2rem;
+  font-size: 4rem;
+}
+.container .contact .contact-box .media-box .facebook:hover {
+  color: #fef6eb;
+  text-shadow: 0 0 10px black;
+}
+.container .contact .contact-box .media-box .facebook {
+  color: #0866ff;
+  transition: text-shadow 0.5s;
+}
+.container .contact .contact-box .media-box .instagram:hover {
+  -webkit-text-fill-color: #fef6eb;
+  text-shadow: 0 0 10px black;
+}
+.container .contact .contact-box .media-box .instagram {
+  background: linear-gradient(to right top, #ffd340, #ff9d3b, #ff5d5e, #ff008f, #d300c5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-shadow 0.3s;
+}
+.container .map {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container .map .map-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.container .map .map-box iframe {
+  height: 300px;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .container .menu .md-breakpoint {
+    display: flex;
+  }
+  .container .menu .md-breakpoint .menu-container {
+    margin: 2rem;
+  }
+  .container .menu .menu-box .menu-container:hover {
+    scale: 1.3;
+  }
+  .container .menu .drinks-menu {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .container .contact .contact-box {
+    font-size: 2rem;
+  }
+  .container .map .map-box iframe {
+    width: 90%;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu .menu-box .lg-breakpoint {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,16 @@ const imgFood = [
 	"ramen_tantamen",
 	"ramen_yakiniku",
 	"ramen_kotteri",
-	"",
+	"lody_yuzu",
+	"krem_matcha",
+	"kimchi",
+	"wołowina_tataki",
+	"smażone_krewetki",
+	"edamame",
+	"żeberka_teryaki",
+	"smażony_stek",
+	"udon_wołowina",
+	"udon_wege",
 ];
 let imgNumber = 0;
 const bgcImgAdd = () => {
