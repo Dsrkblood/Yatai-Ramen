@@ -20,7 +20,7 @@ const imgFood = [
 let imgNumber = 0;
 const bgcImgAdd = () => {
 	menuContainer.forEach(container => {
-		container.style.backgroundImage = `url(../img/Food/${imgFood[imgNumber]}.jpg)`;
+		container.style.backgroundImage = `url(./img/Food/${imgFood[imgNumber]}.jpg)`;
 		imgNumber++;
 	});
 };
