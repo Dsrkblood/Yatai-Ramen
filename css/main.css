@@ -151,10 +151,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.4rem;
   width: 100%;
 }
 .container .menu .drinks-menu table {
+  font-size: 1.6rem;
   width: 90%;
 }
 .container .contact {
@@ -267,11 +267,10 @@ footer {
     scale: 1.2;
   }
   .container .menu .drinks-menu {
-    font-size: 2.2rem;
-    width: 100%;
+    width: 70%;
   }
   .container .menu .drinks-menu table {
-    width: 60%;
+    font-size: 1.6rem;
   }
   .container .contact .contact-box {
     font-size: 2.6rem;
@@ -288,14 +287,13 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  .menu .menu-box .lg-breakpoint {
+  .container .menu .menu-box .lg-breakpoint {
     display: flex;
   }
-  .menu .drinks-menu {
-    width: 500px;
-    font-size: 4rem;
+  .container .menu .drinks-menu {
+    width: 100%;
   }
-  .menu .drinks-menu td {
-    border-bottom: 1px solid black;
+  .container .menu .drinks-menu table {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
