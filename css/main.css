@@ -290,6 +290,10 @@ footer {
   .container .menu .menu-box .lg-breakpoint {
     display: flex;
   }
+  .container .menu .menu-box .menu-container {
+    width: 250px;
+    height: 250px;
+  }
   .container .menu .drinks-menu {
     width: 100%;
   }
