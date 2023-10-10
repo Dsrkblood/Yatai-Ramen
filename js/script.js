@@ -2,20 +2,20 @@ const menuContainer = document.querySelectorAll(".menu-container");
 const yearFooter = document.querySelector(".year");
 
 const imgFood = [
-	"ramen_yakitori",
-	"ramen_tantamen",
-	"ramen_yakiniku",
-	"ramen_kotteri",
-	"lody_yuzu",
-	"krem_matcha",
 	"kimchi",
 	"wołowina_tataki",
 	"smażone_krewetki",
 	"edamame",
+	"ramen_yakitori",
+	"ramen_tantamen",
+	"ramen_yakiniku",
+	"ramen_kotteri",
 	"żeberka_teryaki",
 	"smażony_stek",
 	"udon_wołowina",
 	"udon_wege",
+	"lody_yuzu",
+	"krem_matcha",
 ];
 let imgNumber = 0;
 const bgcImgAdd = () => {
