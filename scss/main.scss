@@ -235,6 +235,9 @@ footer {
 	text-align: center;
 	color: $main-color;
 	background-color: black;
+	.year {
+		font-weight: bold;
+	}
 }
 
 @media (min-width: 768px) {

@@ -224,6 +224,9 @@ footer {
   color: #fef6eb;
   background-color: black;
 }
+footer .year {
+  font-weight: bold;
+}
 
 @media (min-width: 768px) {
   html {
