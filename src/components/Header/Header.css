@@ -1,0 +1,14 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FEF6EB;
+	width: 100vw;
+}
+
+.header .header-logo {
+	margin: 1rem;
+	padding: 0.5rem;
+	height: 9rem;
+	cursor: pointer;
+}
