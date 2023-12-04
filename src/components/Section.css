@@ -5,9 +5,9 @@ nav {
 	border-bottom: 1px solid black;
 }
 nav button {
-	margin: 0.5rem 1rem;
-	padding: 1rem 1.5rem;
-	font-size: 1.6rem;
+	margin: 0.5rem 0.5rem;
+	padding: 1rem 1rem;
+	font-size: 2rem;
 	font-weight: bold;
 	background: none;
 	border: none;

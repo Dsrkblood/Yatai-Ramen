@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Button from "./Buttons/Button";
-
 import Contact from "./Content/contact";
-
+import Footer from "./Footer";
 import "./Section.css";
 
 export default function Section() {
@@ -12,7 +11,7 @@ export default function Section() {
 		setSelectedTopic(selectedBtn);
 	}
 
-	let sectionContent = { Contact };
+	let sectionContent = <Contact />;
 	return (
 		<>
 			<nav>
@@ -35,6 +34,7 @@ export default function Section() {
 				</ul>
 			</nav>
 			<section>{sectionContent}</section>
+			<Footer title="Yatai Ramen"/>
 		</>
 	);
 }

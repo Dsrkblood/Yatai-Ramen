@@ -6,8 +6,8 @@ export default function Header() {
 		<header className='header'>
 			<a
 				href='https://www.facebook.com/yatairamen.pruszkow'
-				target='_blank'
-				rel='noopener noreferrer'>
+				rel='noreferrer'
+				target='_blank'>
 				<img
 					className='header-logo'
 					src={YataiRamen}
