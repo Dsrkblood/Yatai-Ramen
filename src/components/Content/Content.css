@@ -5,17 +5,18 @@ section {
 	background-color: #fef6eb;
 }
 section h2 {
-	padding: 10px;
+	padding: 1rem;
 	font-size: 2.8rem;
+	letter-spacing: 0.1rem;
 	color: #fef6eb;
 	background-color: black;
 }
 section ul {
-	margin-top: 20px;
+	margin-top: 3rem;
 }
 section ul li {
-	margin-top: 20px;
-	font-size: 2rem;
+	margin-top: 2rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 	list-style: none;
 }
@@ -24,12 +25,15 @@ section ul li a {
 	text-decoration: none;
 	transition: color 0.3s, text-shadow 0.3s;
 }
+
 section ul li a:hover {
 	color: #fef6eb;
-	text-shadow: 0 0 10px black;
+	text-shadow: 0 0 1rem black;
 }
 section .social-media {
+	margin: 2rem 0;
 }
+
 section .social-media a {
 	font-size: 5rem;
 	margin: 1rem 2rem;
@@ -51,4 +55,9 @@ section .social-media .instagram {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	transition: text-shadow 0.3s;
+}
+
+section iframe {
+	width: 100%;
+	min-height: 300px;
 }

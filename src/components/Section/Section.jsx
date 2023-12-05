@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../Buttons/Button";
-import Contact from "../Content/contact";
+import SectionContent from "./SectionContent";
+
 import "./Section.css";
 
 export default function Section() {
@@ -10,7 +11,8 @@ export default function Section() {
 		setSelectedTopic(selectedBtn);
 	}
 
-	let sectionContent = <Contact />;
+	
+
 	return (
 		<>
 			<nav>
@@ -32,7 +34,7 @@ export default function Section() {
 					</Button>
 				</ul>
 			</nav>
-			<section>{sectionContent}</section>
+			<SectionContent topic={selectedTopic}/>
 		</>
 	);
 }
