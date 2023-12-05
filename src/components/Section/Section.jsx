@@ -4,7 +4,7 @@ import Contact from "../Content/contact";
 import "./Section.css";
 
 export default function Section() {
-	const [selectedTopic, setSelectedTopic] = useState("menu");
+	const [selectedTopic, setSelectedTopic] = useState("contact");
 
 	function handleSelect(selectedBtn) {
 		setSelectedTopic(selectedBtn);

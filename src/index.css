@@ -10,12 +10,13 @@ html {
 
 #root {
 	width: 100vw;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 body {
+	width: 100vw;
+	font-family: "Paytone One", sans-serif;
 }
 
 @media (min-width: 768px) {
