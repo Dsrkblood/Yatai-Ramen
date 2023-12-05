@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Button from "./Buttons/Button";
-import Contact from "./Content/contact";
-import Footer from "./Footer";
+import Button from "../Buttons/Button";
+import Contact from "../Content/contact";
 import "./Section.css";
 
 export default function Section() {
@@ -34,7 +33,6 @@ export default function Section() {
 				</ul>
 			</nav>
 			<section>{sectionContent}</section>
-			<Footer title="Yatai Ramen"/>
 		</>
 	);
 }
