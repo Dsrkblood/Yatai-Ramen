@@ -11,8 +11,6 @@ export default function Section() {
 		setSelectedTopic(selectedBtn);
 	}
 
-	
-
 	return (
 		<>
 			<nav>
@@ -34,7 +32,9 @@ export default function Section() {
 					</Button>
 				</ul>
 			</nav>
-			<SectionContent topic={selectedTopic}/>
+			<>
+				<SectionContent topic={selectedTopic} />
+			</>
 		</>
 	);
 }
