@@ -9,13 +9,18 @@ export default function Content({ content }) {
 	} else {
 		console.log("error");
 	}
+
+	const arrowShow = content === "menu" && (
+		<a href='#top'>
+			<i className='fa-regular fa-circle-up'></i>
+		</a>
+	);
+
 	return (
 		<main>
 			<header>
 				<h2>{header} </h2>
-				<a href='#top'>
-					<i class='fa-regular fa-circle-up'></i>
-				</a>
+				{arrowShow}
 			</header>
 			<section></section>
 		</main>
