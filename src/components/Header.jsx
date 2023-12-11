@@ -2,7 +2,7 @@ import YataiRamen from "./img/LogoYataiRamen.png";
 
 export default function Header() {
 	return (
-		<header>
+		<header id='top'>
 			<a
 				href='https://www.facebook.com/yatairamen.pruszkow'
 				rel='noreferrer'

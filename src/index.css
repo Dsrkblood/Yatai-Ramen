@@ -6,6 +6,7 @@
 
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 #root {
@@ -15,7 +16,7 @@ html {
 }
 body {
 	height: 100%;
-	/* font-family: "Paytone One", sans-serif; */
+	font-family: "Paytone One", sans-serif;
 }
 
 header {
@@ -62,4 +63,32 @@ nav button.active {
 nav button:hover {
 	color: #fef6eb;
 	text-shadow: 0 0 2rem black;
+}
+main {
+	width: 100%;
+}
+main header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main header h2 {
+	padding: 0.5rem;
+	width: 100%;
+	color: #fef6eb;
+	text-align: center;
+	font-size: 3.6rem;
+	background-color: black;
+}
+main header a {
+	position: absolute;
+	right: 3rem;
+	font-size: 3rem;
+	color: #fef6eb;
+	cursor: pointer;
+}
+section {
+	height: 200vh;
 }
