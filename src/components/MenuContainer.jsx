@@ -2,7 +2,7 @@ export default function MenuContainer({ contentOf }) {
 	// console.log(contentOf);
 	// const vege = contentOf.vege && <span>vege</span>;
 	return (
-		<div>
+		<div className='menu-box'>
 			<h3>
 				{contentOf.title}
 				{/* {vege} */}

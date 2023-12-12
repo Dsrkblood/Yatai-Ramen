@@ -29,7 +29,10 @@ export default function Content({ content }) {
 			<header>
 				<h2>{header} </h2>
 			</header>
-			<section>{showTitleContent}</section>
+			<section
+				className={showTitleContent === "menu" ? "menu-other" : "menu-main"}>
+				{showTitleContent}
+			</section>
 			{arrowShow}
 		</main>
 	);
