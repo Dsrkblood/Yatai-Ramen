@@ -1,6 +1,6 @@
 export default function Contact() {
 	return (
-		<div className="contact-info">
+		<div className='contact-info'>
 			<p>Emancypantek 4</p>
 			<p>05-804 Pruszków</p>
 			<p>
@@ -18,9 +18,14 @@ export default function Contact() {
 				<a href='https://www.facebook.com/yatairamen.pruszkow'>
 					<i className='fa-brands fa-square-facebook facebook'></i>
 				</a>
-				<a href='#instagram'>
+				<a href='https://www.instagram.com/yatai.ramen_restauracja?fbclid=IwAR13YMERvf6qgaAHeodh_uRfeUwieBYgwpK6mTfUSm1sCPXoTtzpbjJe8Gg'>
 					<i className='fa-brands fa-instagram instagram'></i>
 				</a>
+			</div>
+			<div className='opening'>
+				<p>pon: nieczynne</p>
+				<p>wt - sob: 12-22</p>
+				<p>ndz: 12-20</p>
 			</div>
 		</div>
 	);

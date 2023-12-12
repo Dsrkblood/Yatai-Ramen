@@ -6,7 +6,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 
 function App() {
-	const [isActive, setIsActive] = useState("contact");
+	const [isActive, setIsActive] = useState("menu");
 
 	function handleChoseButton(title) {
 		setIsActive(title);
