@@ -1,4 +1,6 @@
 import Contact from "./Contact";
+import RouteMap from "./RouteMap";
+
 export default function Content({ content }) {
 	let showTitleContent;
 	let header;
@@ -9,12 +11,13 @@ export default function Content({ content }) {
 		showTitleContent = <Contact />;
 	} else if (content === "map") {
 		header = "Mapa";
+		showTitleContent = <RouteMap />;
 	} else {
 		console.log("error");
 	}
 
 	const arrowShow = content === "menu" && (
-		<a href='#top'>
+		<a className='arrow-top' href='#top'>
 			<i className='fa-regular fa-circle-up'></i>
 		</a>
 	);
@@ -23,9 +26,9 @@ export default function Content({ content }) {
 		<main>
 			<header>
 				<h2>{header} </h2>
-				{arrowShow}
 			</header>
 			<section>{showTitleContent}</section>
+			{arrowShow}
 		</main>
 	);
 }

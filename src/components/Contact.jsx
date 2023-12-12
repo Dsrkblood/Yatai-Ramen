@@ -1,6 +1,6 @@
 export default function Contact() {
 	return (
-		<>
+		<div className="contact-info">
 			<p>Emancypantek 4</p>
 			<p>05-804 Pruszków</p>
 			<p>
@@ -22,6 +22,6 @@ export default function Contact() {
 					<i className='fa-brands fa-instagram instagram'></i>
 				</a>
 			</div>
-		</>
+		</div>
 	);
 }
