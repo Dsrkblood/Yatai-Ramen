@@ -1,3 +1,0 @@
-# Yatai Ramen
-* Restaurant website
-
