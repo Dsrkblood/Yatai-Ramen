@@ -18,22 +18,14 @@ export default function Content({ content }) {
 		console.log("error");
 	}
 
-	const arrowShow = content === "menu" && (
-		<a className='arrow-top' href='#top'>
-			<i className='fa-regular fa-circle-up'></i>
-		</a>
-	);
-
 	return (
 		<main>
 			<header>
 				<h2>{header} </h2>
 			</header>
-			<section
-				className={showTitleContent === "menu" ? "menu-other" : "menu-main"}>
+			<section className={content === "menu" ? "menu-main" : "menu-other"}>
 				{showTitleContent}
 			</section>
-			{arrowShow}
 		</main>
 	);
 }
