@@ -4,7 +4,6 @@ export const COMPLETE_MENU = [
 		title: "kimchi",
 		description: "jabłko/sezam/arbuz",
 		price: "15zł",
-		photo: "",
 		vege: true,
 	},
 	{
@@ -12,7 +11,6 @@ export const COMPLETE_MENU = [
 		title: "wołowina tataki",
 		description: "yuzu/furikake/czerwona cebula/orzech laskowy",
 		price: "42zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -20,15 +18,13 @@ export const COMPLETE_MENU = [
 		title: "smażone krewetki 8 pcs.",
 		description: "marynowany imbir/chilli/ogórek/awokado",
 		price: "39zł",
-		photo: "",
 		vege: false,
 	},
 	{
 		typeOf: "appetizers",
 		title: "edamame",
-		description: "chilli,tofu,kolendra",
+		description: "chilli/tofu/kolendra",
 		price: "23zł",
-		photo: "",
 		vege: true,
 	},
 	{
@@ -37,7 +33,6 @@ export const COMPLETE_MENU = [
 		description:
 			"grilowany kurczak/jajko/sezam/grilowana kukurydza/dymka/por/nori",
 		price: "33zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -45,7 +40,6 @@ export const COMPLETE_MENU = [
 		title: "ramen tantamen",
 		description: "żeberka/pak choy/dymka/ragu wieprzowe/jajko",
 		price: "35zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -54,7 +48,6 @@ export const COMPLETE_MENU = [
 		description:
 			"wołowina/krewetki/kiełki fasoli/nori/prażony sezam/dymka/dashi",
 		price: "43zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -63,7 +56,6 @@ export const COMPLETE_MENU = [
 		description:
 			"grzyby/pieczony bakłażan/szpinak/kukurydza + opcjonalnie jajko",
 		price: "41zł",
-		photo: "",
 		vege: true,
 	},
 	{
@@ -71,7 +63,6 @@ export const COMPLETE_MENU = [
 		title: "udon z wołowiną",
 		description: "zielone warzywa/grzyby/sos teryaki/szosnek/jajko",
 		price: "39zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -80,7 +71,6 @@ export const COMPLETE_MENU = [
 		description:
 			"warzywa/marynowany imbir/glony/sos ostrygowy/sezam/dymka/chilli/sos kokosowy/trawa cytrynowa",
 		price: "39zł",
-		photo: "",
 		vege: true,
 	},
 	{
@@ -88,7 +78,6 @@ export const COMPLETE_MENU = [
 		title: "żeberka z sosem teryaki",
 		description: "okonomiyaki z chashu/marynowane ogórki",
 		price: "53zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -96,7 +85,6 @@ export const COMPLETE_MENU = [
 		title: "smażony stek z kalmara",
 		description: "zielona fasolka/sezam/katsobushi/okonomiyaki z warzywami",
 		price: "49zł",
-		photo: "",
 		vege: false,
 	},
 	{
@@ -104,7 +92,6 @@ export const COMPLETE_MENU = [
 		title: "lody yuzu z ciasteczkiem migdałowym i musem jabłkowym",
 		description: null,
 		price: "19zł",
-		photo: "",
 		vege: null,
 	},
 	{
@@ -112,7 +99,6 @@ export const COMPLETE_MENU = [
 		title: "krem matcha z wanillią",
 		description: null,
 		price: "15zł",
-		photo: "",
 		vege: null,
 	},
 ];
