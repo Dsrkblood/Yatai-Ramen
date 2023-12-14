@@ -170,6 +170,7 @@ section.map {
 
 section .menu-container {
 	width: 100%;
+	margin-bottom: 2rem;
 }
 
 section .menu-container .menu {

@@ -3,12 +3,27 @@ import { COMPLETE_MENU } from "./complete-menu";
 const copyArray = [...COMPLETE_MENU];
 export default function Menu() {
 	let typeOf;
+
+	function checkTypeOf(item){
+		let mainTitle;
+		if(item === 'appetizers'){
+			mainTitle = "Przystawki"
+		}else if(item === 'main_course'){
+			mainTitle = "Dania główne"
+		}else if(item === 'dessert'){
+			mainTitle = 'Desery'
+		}else{
+			mainTitle = item
+		}
+		return mainTitle;
+	}
+
 	const menuContainer = copyArray.map((item, indexOf) => {
 		if (item.typeOf !== typeOf) {
 			typeOf = item.typeOf;
 			return (
 				<div key={indexOf}>
-					<h2>{item.typeOf}</h2>
+					<h2>{checkTypeOf(item.typeOf)}</h2>
 					{menu()}
 				</div>
 			);
