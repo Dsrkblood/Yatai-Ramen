@@ -14,18 +14,18 @@ export default function Content({ content }) {
 	} else if (content === "map") {
 		header = "Mapa";
 		showTitleContent = <RouteMap />;
+	} else if (content === "special") {
+		console.log("In Progres");
 	} else {
-		console.log("error");
+		console.log(console.error());
 	}
 
 	return (
-		<main>
+		<main className={content === "menu" ? "disactive" : null}>
 			<header>
 				<h2>{header} </h2>
 			</header>
-			<section className={content === "menu" ? "menu-main" : "menu-other"}>
-				{showTitleContent}
-			</section>
+			{showTitleContent}
 		</main>
 	);
 }

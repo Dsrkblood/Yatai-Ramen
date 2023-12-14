@@ -36,5 +36,9 @@ export default function Menu() {
 		return box;
 	}
 
-	return <>{menuContainer}</>;
+	return (
+		<section>
+			<div className='menu-container'>{menuContainer}</div>
+		</section>
+	);
 }
