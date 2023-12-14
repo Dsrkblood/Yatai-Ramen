@@ -4,16 +4,16 @@ const copyArray = [...COMPLETE_MENU];
 export default function Menu() {
 	let typeOf;
 
-	function checkTypeOf(item){
+	function checkTypeOf(item) {
 		let mainTitle;
-		if(item === 'appetizers'){
-			mainTitle = "Przystawki"
-		}else if(item === 'main_course'){
-			mainTitle = "Dania główne"
-		}else if(item === 'dessert'){
-			mainTitle = 'Desery'
-		}else{
-			mainTitle = item
+		if (item === "appetizers") {
+			mainTitle = "Przystawki";
+		} else if (item === "main_course") {
+			mainTitle = "Dania główne";
+		} else if (item === "dessert") {
+			mainTitle = "Desery";
+		} else {
+			mainTitle = item;
 		}
 		return mainTitle;
 	}
@@ -39,7 +39,12 @@ export default function Menu() {
 					<div key={indexOf} className='menu'>
 						<div className='header'>
 							<h3>
-								{item.title} {item.vege && <span>Wege</span>}
+								{item.title}{" "}
+								{item.vege && (
+									<span>
+										<i className='fa-solid fa-leaf'></i>
+									</span>
+								)}
 							</h3>
 							<h3>{item.price}</h3>
 						</div>
