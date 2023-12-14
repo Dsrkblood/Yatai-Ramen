@@ -63,6 +63,7 @@ nav button {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	font-weight: bold;
+	color: var(--primary);
 	background: none;
 	border: none;
 	cursor: pointer;
