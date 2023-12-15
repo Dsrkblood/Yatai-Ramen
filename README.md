@@ -2,7 +2,9 @@
 
 #### https://yatairamen.netlify.app/
 
-- The website of Yatai Ramen🥢 restaurant in Pruszków.
-- Full responsive web site.
-- Site in development all the time.
-- Website created with React Vite
+- Website for Yatai Ramen Restaurant🥢
+- On the site, you can navigate between the menu tabs, contact, and a driving map.
+- There are plans🏗️ to add a "weekend menu" tab and a comment section loaded dynamically from Google.
+
+- Fully responsive website
+- Site created using React.js Vite
